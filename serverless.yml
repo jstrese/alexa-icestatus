@@ -1,0 +1,16 @@
+service: icemortgagestatus
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: ${opt:stage, 'dev'}
+  region: us-east-2
+
+functions:
+  alexa-icemortgagestatus:
+    name: alexa-icemortgagestatus-${self:provider.stage}
+    handler: skill/index.handler
+    events:
+      - alexaSkill: ${env:ALEXA_SKILL_ID}

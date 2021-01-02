@@ -1,0 +1,434 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "status center",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel",
+                        "nevermind"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "outages",
+                    "slots": [
+                        {
+                            "name": "PRODUCT",
+                            "type": "EMPRODUCT"
+                        }
+                    ],
+                    "samples": [
+                        "is {PRODUCT} impacted",
+                        "if {PRODUCT} is impacted",
+                        "is {PRODUCT} having issues",
+                        "status of {PRODUCT}",
+                        "check {PRODUCT}",
+                        "is {PRODUCT} down",
+                        "and check for issues",
+                        "if {PRODUCT} is having issues",
+                        "if {PRODUCT} is down",
+                        "are there any outages",
+                        "check for outages"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "EMPRODUCT",
+                    "values": [
+                        {
+                            "id": "EllieMaeStatusCenter",
+                            "name": {
+                                "value": "Ellie Mae Status Center",
+                                "synonyms": [
+                                    "StatusCenter",
+                                    "Status Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TechnicalSupportUserForums",
+                            "name": {
+                                "value": "Forums",
+                                "synonyms": [
+                                    "Message Board",
+                                    "User Forums",
+                                    "Forums",
+                                    "Forum"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TechnicalSupportOnlineChatSupport",
+                            "name": {
+                                "value": "Chat Support",
+                                "synonyms": [
+                                    "Chat",
+                                    "Chat Support"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TechnicalSupportPhoneSupport",
+                            "name": {
+                                "value": "Phone Support",
+                                "synonyms": [
+                                    "Phone Support",
+                                    "Support",
+                                    "Phone"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassInvestorConnect",
+                            "name": {
+                                "value": "Encompass Investor Connect",
+                                "synonyms": [
+                                    "Investor Connect",
+                                    "Investor"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "VelocifyPulse",
+                            "name": {
+                                "value": "Velocify Pulse",
+                                "synonyms": [
+                                    "Velocify Pulse",
+                                    "Pulse"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "VelocifyDial-IQ",
+                            "name": {
+                                "value": "Velocify Dial-IQ",
+                                "synonyms": [
+                                    "IQ",
+                                    "Dial IQ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "VelocifyLoanEngage",
+                            "name": {
+                                "value": "Velocify LoanEngage",
+                                "synonyms": [
+                                    "Engage",
+                                    "Loan Engage"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "VelocifyLeadManager",
+                            "name": {
+                                "value": "Velocify LeadManager",
+                                "synonyms": [
+                                    "Lead Manager"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EllieMaeResourceCenter",
+                            "name": {
+                                "value": "Resource Center",
+                                "synonyms": [
+                                    "RC",
+                                    "Resource Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassHomepage",
+                            "name": {
+                                "value": "Homepage",
+                                "synonyms": [
+                                    "Homepage"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassConsumerDirect",
+                            "name": {
+                                "value": "Consumer Direct",
+                                "synonyms": [
+                                    "Direct",
+                                    "Consumer Direct"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MortgageReturns/EncompassCRM",
+                            "name": {
+                                "value": "CRM",
+                                "synonyms": [
+                                    "MR",
+                                    "CRM",
+                                    "Mortgage Returns"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TQLEncompassRiskService",
+                            "name": {
+                                "value": "Risk Service",
+                                "synonyms": [
+                                    "Risk",
+                                    "Risk Service",
+                                    "TQL Risk"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TQLEncompassFraudServices",
+                            "name": {
+                                "value": "Fraud Services",
+                                "synonyms": [
+                                    "TQL Fraud",
+                                    "Fraud",
+                                    "Fraud Service"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TQLEncompass4506-TService",
+                            "name": {
+                                "value": "4506-T Service",
+                                "synonyms": [
+                                    "TQL 4506 T",
+                                    "4506-T Service",
+                                    "4506T"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EllieMaeFaxService",
+                            "name": {
+                                "value": "Fax Service",
+                                "synonyms": [
+                                    "Fax",
+                                    "Fax Service"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassTitleCenter",
+                            "name": {
+                                "value": "Title Center",
+                                "synonyms": [
+                                    "Center",
+                                    "Title Center"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassAppraisalCenter",
+                            "name": {
+                                "value": "Appraisal Center",
+                                "synonyms": [
+                                    "Appraisal Center",
+                                    "Center",
+                                    "Appraisal"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EllieMaeAcademy",
+                            "name": {
+                                "value": "LMS",
+                                "synonyms": [
+                                    "EM Academy",
+                                    "Ellie Mae Academy",
+                                    "Academy",
+                                    "LMS"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "AllRegs",
+                            "name": {
+                                "value": "AllRegs",
+                                "synonyms": [
+                                    "AONG",
+                                    "AO",
+                                    "AllRegs Online"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassDataConnect",
+                            "name": {
+                                "value": "Data Connect",
+                                "synonyms": [
+                                    "Data",
+                                    "Data Connect"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassDeveloperConnect",
+                            "name": {
+                                "value": "Developer Connect",
+                                "synonyms": [
+                                    "Developer Connect",
+                                    "Developer"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassLoanOfficerConnect",
+                            "name": {
+                                "value": "LO Connect",
+                                "synonyms": [
+                                    "LO Connect"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassTPOConnect",
+                            "name": {
+                                "value": "TPO Connect",
+                                "synonyms": [
+                                    "TPO",
+                                    "TPO Connect"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassTPOWebCenter",
+                            "name": {
+                                "value": "TPO WebCenter",
+                                "synonyms": [
+                                    "TPO WebCenter",
+                                    "TPO"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassWebCenter",
+                            "name": {
+                                "value": "WebCenter",
+                                "synonyms": [
+                                    "WebCenter",
+                                    "WC"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ElectronicDocumentManagement",
+                            "name": {
+                                "value": "EDM",
+                                "synonyms": [
+                                    "EDM"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassProductandPricingService",
+                            "name": {
+                                "value": "EPPS",
+                                "synonyms": [
+                                    "Pricing",
+                                    "EPPS"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MaventComplianceService",
+                            "name": {
+                                "value": "Mavent",
+                                "synonyms": [
+                                    "Mavent"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassComplianceService",
+                            "name": {
+                                "value": "Compliance",
+                                "synonyms": [
+                                    "ECS"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassDocsSolution",
+                            "name": {
+                                "value": "Docs",
+                                "synonyms": [
+                                    "Encompass Docs",
+                                    "EDS",
+                                    "Docs"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EllieMaeNetworkServices",
+                            "name": {
+                                "value": "EMN",
+                                "synonyms": [
+                                    "ellie mae network",
+                                    "network services",
+                                    "EMN"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TQLEncompassFloodService",
+                            "name": {
+                                "value": "Flood Service",
+                                "synonyms": [
+                                    "TQL",
+                                    "Total Quality Loans"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EncompassConsumerConnect",
+                            "name": {
+                                "value": "Consumer Connect",
+                                "synonyms": [
+                                    "CC",
+                                    "ConCon"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "Encompass",
+                            "name": {
+                                "value": "Encompass",
+                                "synonyms": [
+                                    "encompass",
+                                    "Smart Client",
+                                    "Enc"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

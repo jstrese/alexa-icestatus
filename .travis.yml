@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 12
+
+branches:
+  only:
+    - develop
+
+deploy_skill_lambda: &DEPLOY_SKILL_LAMBDA
+  install:
+    - npm install -g serverless
+    - travis_retry npm install
+  script:
+    - serverless deploy -s ${SLS_STAGE}
+
+jobs:
+  include:
+    - <<: *DEPLOY_SKILL_LAMBDA
+      name: "Deploy skill lambda function"
