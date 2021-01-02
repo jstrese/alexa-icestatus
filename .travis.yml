@@ -11,7 +11,7 @@ branches:
 
 deploy_skill_lambda: &DEPLOY_SKILL_LAMBDA
   install:
-    - npm install -g serverless
+    - travis_retry npm install serverless
     - travis_retry npm install
   script:
     - serverless deploy -s ${SLS_STAGE}
