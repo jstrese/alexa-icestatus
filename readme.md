@@ -4,7 +4,7 @@
 
 | Master | Develop |
 | ------ | ------- |
-| [![Build Status](https://travis-ci.com/jstrese/alexa-emsc.svg?token=sFGfhnwi8YKKNY2KpFNX&branch=master)](https://travis-ci.com/jstrese/alexa-emsc) | [![Build Status](https://travis-ci.com/jstrese/alexa-emsc.svg?token=sFGfhnwi8YKKNY2KpFNX&branch=develop)](https://travis-ci.com/jstrese/alexa-emsc) |
+| [![Build Status](https://travis-ci.com/jstrese/alexa-icestatus.svg?token=sFGfhnwi8YKKNY2KpFNX&branch=master)](https://travis-ci.com/jstrese/alexa-icestatus) | [![Build Status](https://travis-ci.com/jstrese/alexa-icestatus.svg?token=sFGfhnwi8YKKNY2KpFNX&branch=develop)](https://travis-ci.com/jstrese/alexa-icestatus) |
 
 <br />
 
