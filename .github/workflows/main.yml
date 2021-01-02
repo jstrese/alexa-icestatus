@@ -1,0 +1,45 @@
+# Docs:
+# https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
+
+name: build-alexa-icestatus
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ master, develop ]
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secret.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secret.AWS_SECRET_ACCESS_KEY }}
+  ALEXA_SKILL_ID: ${{ secret.ALEXA_SKILL_ID }}
+  SLS_STAGE: ${{ secret.SLS_STAGE }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 12.x ]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Serverless
+        run: npm install serverless
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy with Serverless
+        run: serverless deploy -s ${SLS_STAGE}
