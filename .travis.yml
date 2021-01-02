@@ -2,13 +2,17 @@ language: node_js
 node_js:
   - 12
 
+cache:
+  npm: true
+
 branches:
   only:
+    - master
     - develop
 
 deploy_skill_lambda: &DEPLOY_SKILL_LAMBDA
   install:
-    - npm install -g serverless
+    - travis_retry npm install serverless
     - travis_retry npm install
   script:
     - serverless deploy -s ${SLS_STAGE}
