@@ -1,17 +1,23 @@
 # Docs:
 # https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
 
-name: build-alexa-icestatus
+name: build-alexa-icestatus-prod
 
 on:
   push:
-    branches: [ master, develop ]
+    branches: [ master ]
   pull_request:
-    branches: [ master, develop ]
+    branches: [ master ]
 
 defaults:
   run:
     shell: bash
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  ALEXA_SKILL_ID: ${{ secrets.ALEXA_SKILL_ID }}
+  SLS_STAGE: prod
 
 jobs:
   build:
@@ -36,9 +42,4 @@ jobs:
         run: npm install
 
       - name: Deploy with Serverless
-        run: |
-          export AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
-          export AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          export ALEXA_SKILL_ID=${{ secrets.ALEXA_SKILL_ID }}
-          export SLS_STAGE=${{ secrets.development.SLS_STAGE }}
-          serverless deploy -s $SLS_STAGE
+        run: serverless deploy -s $SLS_STAGE
