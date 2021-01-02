@@ -21,12 +21,6 @@ jobs:
       matrix:
         node-version: [ 12.x ]
 
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      ALEXA_SKILL_ID: ${{ secrets.ALEXA_SKILL_ID }}
-      SLS_STAGE: ${{ secrets.SLS_STAGE }}
-
     steps:
       - uses: actions/checkout@v2
 
@@ -42,4 +36,9 @@ jobs:
         run: npm install
 
       - name: Deploy with Serverless
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          ALEXA_SKILL_ID: ${{ secrets.ALEXA_SKILL_ID }}
+          SLS_STAGE: ${{ secrets.SLS_STAGE }}
         run: serverless deploy -s $SLS_STAGE
