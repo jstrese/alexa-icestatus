@@ -1,6 +1,6 @@
 # Getting Started
 
-## Build Status
+### Build Status
 
 | Master | Develop |
 | ------ | ------- |

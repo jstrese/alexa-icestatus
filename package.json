@@ -1,7 +1,7 @@
 {
-  "name": "node",
-  "version": "1.0.0",
-  "description": "",
+  "name": "alexa-icestatus",
+  "version": "0.1.1",
+  "description": "Alexa skill that provides information from the ICE Mortgage Technology status center.",
   "main": "index.js",
   "dependencies": {
     "request": "^2.88.0",
@@ -11,6 +11,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Jason Strese",
+  "license": "GPL-3.0-or-later"
 }
