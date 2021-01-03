@@ -12,7 +12,7 @@ on:
       - 'test/**'
   pull_request:
     branches: [ develop ]
-      paths:
+    paths:
       - '**.js'
       - '**.yml'
       - 'test/**'
