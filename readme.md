@@ -4,7 +4,7 @@
 
 | Master | Develop |
 | ------ | ------- |
-| ![Build Dev](https://github.com/jstrese/alexa-icestatus/workflows/Build%20Master/badge.svg) | ![Build Dev](https://github.com/jstrese/alexa-icestatus/workflows/Build%20Develop/badge.svg) |
+| ![Build Master](https://github.com/jstrese/alexa-icestatus/workflows/Build%20Master/badge.svg) | ![Build Dev](https://github.com/jstrese/alexa-icestatus/workflows/Build%20Develop/badge.svg) |
 
 <br />
 
