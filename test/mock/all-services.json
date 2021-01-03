@@ -1,0 +1,29 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": true,
+		"sessionId": "amzn1.echo-api.session.0e5a995a-88ea-4977-bac1-2134691bc5b2",
+		"application": {
+			"applicationId": "amzn1.ask.skill.321b4a11-c726-466a-a8e3-3b935e98560f"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AFNW2GFVTLSP6U6VZEW2TN7CZPYN32NEQS73TKXD5OVXXMRRZB2DALARXP5D3GYBAPNK2DB43WYMH7GAILNSWOGEB6HFD7Y4VL3AYIVTD5HD7YPGX4YD6QESYW77TAIGCU6RHYIP5SKYE2RDBLBJLELVMEOXWGT44CREXVVHN52DZYZ22X4FRPBA6GUSE5BHCOFBPMXVJG5LENA"
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.590466a2-e757-44b3-a767-08e02a300f3d",
+		"locale": "en-US",
+		"timestamp": "2021-01-03T00:56:21Z",
+		"intent": {
+			"name": "outages",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"PRODUCT": {
+					"name": "PRODUCT",
+					"confirmationStatus": "NONE"
+				}
+			}
+		}
+	}
+}

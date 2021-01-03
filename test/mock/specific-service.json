@@ -1,0 +1,71 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": true,
+		"sessionId": "amzn1.echo-api.session.203f122f-591c-4d92-aa0c-4de782167cf4",
+		"application": {
+			"applicationId": "amzn1.ask.skill.321b4a11-c726-466a-a8e3-3b935e98560f"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AFNW2GFVTLSP6U6VZEW2TN7CZPYN32NEQS73TKXD5OVXXMRRZB2DALARXP5D3GYBAPNK2DB43WYMH7GAILNSWOGEB6HFD7Y4VL3AYIVTD5HD7YPGX4YD6QESYW77TAIGCU6RHYIP5SKYE2RDBLBJLELVMEOXWGT44CREXVVHN52DZYZ22X4FRPBA6GUSE5BHCOFBPMXVJG5LENA"
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.8f981124-40fb-42f9-b6d4-7613fecc73a2",
+		"locale": "en-US",
+		"timestamp": "2021-01-03T00:49:04Z",
+		"intent": {
+			"name": "outages",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"PRODUCT": {
+					"name": "PRODUCT",
+					"value": "resource center",
+					"resolutions": {
+						"resolutionsPerAuthority": [
+							{
+								"authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.321b4a11-c726-466a-a8e3-3b935e98560f.EMPRODUCT",
+								"status": {
+									"code": "ER_SUCCESS_MATCH"
+								},
+								"values": [
+									{
+										"value": {
+											"name": "Resource Center",
+											"id": "EllieMaeResourceCenter"
+										}
+									}
+								]
+							}
+						]
+					},
+					"confirmationStatus": "NONE",
+					"source": "USER",
+					"slotValue": {
+						"type": "Simple",
+						"value": "resource center",
+						"resolutions": {
+							"resolutionsPerAuthority": [
+								{
+									"authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.321b4a11-c726-466a-a8e3-3b935e98560f.EMPRODUCT",
+									"status": {
+										"code": "ER_SUCCESS_MATCH"
+									},
+									"values": [
+										{
+											"value": {
+												"name": "Resource Center",
+												"id": "EllieMaeResourceCenter"
+											}
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,6 @@
 service: icemortgagestatus
 frameworkVersion: '2'
+useDotenv: true
 
 provider:
   name: aws
