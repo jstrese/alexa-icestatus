@@ -1,13 +1,21 @@
 # Docs:
 # https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
 
-name: build-alexa-icestatus-prod
+name: Build Master
 
 on:
   push:
     branches: [ master ]
+    paths:
+      - '**.js'
+      - '**.yml'
+      - 'test/**'
   pull_request:
     branches: [ master ]
+      paths:
+      - '**.js'
+      - '**.yml'
+      - 'test/**'
 
 defaults:
   run:

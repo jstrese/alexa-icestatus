@@ -4,7 +4,7 @@
 
 | Master | Develop |
 | ------ | ------- |
-| [![Build Status](https://travis-ci.com/jstrese/alexa-icestatus.svg?token=sFGfhnwi8YKKNY2KpFNX&branch=master)](https://travis-ci.com/jstrese/alexa-icestatus) | [![Build Status](https://travis-ci.com/jstrese/alexa-icestatus.svg?token=sFGfhnwi8YKKNY2KpFNX&branch=develop)](https://travis-ci.com/jstrese/alexa-icestatus) |
+| ![Build Dev](https://github.com/jstrese/alexa-icestatus/workflows/Build%20Master/badge.svg) | ![Build Dev](https://github.com/jstrese/alexa-icestatus/workflows/Build%20Develop/badge.svg) |
 
 <br />
 
@@ -20,7 +20,7 @@
 1. Clone or fork this repository
 2. Once your changes are complete, create a pull request into *develop*
 3. The PR will be reviewed and merged into develop
-4. Travis CI builds develop and master automatically upon commit / PR
+4. GitHub builds develop and master automatically upon commit / PR
 5. Once code is merged to master the changes should be live within 15 minutes
 
 <br/>

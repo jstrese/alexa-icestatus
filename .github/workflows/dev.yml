@@ -1,13 +1,21 @@
 # Docs:
 # https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
 
-name: build-alexa-icestatus-dev
+name: Build Develop
 
 on:
   push:
     branches: [ develop ]
+    paths:
+      - '**.js'
+      - '**.yml'
+      - 'test/**'
   pull_request:
     branches: [ develop ]
+      paths:
+      - '**.js'
+      - '**.yml'
+      - 'test/**'
 
 defaults:
   run:
@@ -43,3 +51,11 @@ jobs:
 
       - name: Deploy with Serverless
         run: serverless deploy -s $SLS_STAGE
+
+      # - name: Smoke testing the deployment
+      #   if: ${{ success() }}
+      #   run: |
+      #     sh tests/run-tests.sh
+      #     if [[ $? != 0 ]]; then
+      #       echo "Failed smoke tests, rolling back"
+      #     fi
