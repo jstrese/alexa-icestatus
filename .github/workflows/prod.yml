@@ -10,12 +10,12 @@ on:
       - '**.js'
       - '**.yml'
       - 'test/**'
-  pull_request:
-    branches: [ master ]
-    paths:
-      - '**.js'
-      - '**.yml'
-      - 'test/**'
+  # pull_request:
+  #   branches: [ master ]
+  #   paths:
+  #     - '**.js'
+  #     - '**.yml'
+  #     - 'test/**'
 
 defaults:
   run:
