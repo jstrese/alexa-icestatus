@@ -10,12 +10,14 @@ on:
       - '**.js'
       - '**.yml'
       - 'test/**'
+
   # pull_request:
   #   branches: [ develop ]
   #   paths:
   #     - '**.js'
   #     - '**.yml'
   #     - 'test/**'
+
 
 defaults:
   run:
